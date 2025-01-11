@@ -1,0 +1,8 @@
+public interface IConsultaRepository
+{
+    Task<IEnumerable<Consulta>> ObterTodas();
+    Task<Consulta> ObterPorId(Guid id);
+    Task Adicionar(Consulta consulta);
+    Task Atualizar(Consulta consulta);
+    Task Excluir(Guid id);
+}

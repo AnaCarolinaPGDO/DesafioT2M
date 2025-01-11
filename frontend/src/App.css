@@ -1,0 +1,86 @@
+.consultation-app {
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Define a altura do contêiner para preencher a tela */
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+
+h1, h2 {
+  color: #afafaf;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  margin: 0 auto 20px auto; 
+  max-width: 400px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  align-items: center;
+}
+
+App {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+button {
+  padding: 10px;
+  background-color: #03b827;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00b33c8c;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+ li:nth-child(even) {
+  background-color: #f2f3f5;
+}
+
+li:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+li span {
+  margin-right: 10px;
+}
+li {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.error-message {
+  color: red;
+}
+
+@media (max-width: 600px) {
+  form {
+    gap: 5px;
+  }
+}
