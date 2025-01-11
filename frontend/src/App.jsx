@@ -1,17 +1,17 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import FormConsulta from './FormConsulta';
+import MarcarConsulta from './MarcarConsulta';
 
-import './App.css'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import FormConsulta from './components/FormConsulta';
+const App = () => {
+    return (
+        <Router>
+            <Routes>
+                <Route path="/form-consulta" element={<FormConsulta />} />
+                <Route path="/marcar-consulta" element={<MarcarConsulta />} />
+            </Routes>
+        </Router>
+    );
+};
 
-function App() {
-  return (
-    <Router>
-      <Switch>
-        <Route path="/FormConsulta" exact component={FormConsulta} />
-        {/* Add more routes here */}
-      </Switch>
-    </Router>
-  );
-}
-
-export default App
+export default App;

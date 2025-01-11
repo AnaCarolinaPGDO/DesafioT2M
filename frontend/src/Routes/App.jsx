@@ -1,15 +1,15 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import FormConsulta from './FormConsulta';
 import MarcarConsulta from './MarcarConsulta';
 
 const App = () => {
     return (
         <Router>
-            <Switch>
-                <Route path="/form-consulta" component={FormConsulta} />
-                <Route path="/marcar-consulta" component={MarcarConsulta} />
-            </Switch>
+            <Routes>
+                <Route path="/form-consulta" element={<FormConsulta />} />
+                <Route path="/marcar-consulta" element={<MarcarConsulta />} />
+            </Routes>
         </Router>
     );
 };
