@@ -1,7 +1,7 @@
 .consultation-app {
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Define a altura do contêiner para preencher a tela */
+  height: 100vh; 
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;

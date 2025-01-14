@@ -16,7 +16,7 @@ const FormConsulta = () => {
             } catch (error) {
                 console.error('Erro ao buscar consultas:', error);
                 setError(error.message);
-                setConsultas([]); // Defina como um array vazio em caso de erro
+                setConsultas([]);
             }
         };
 
