@@ -8,7 +8,7 @@ const App = () => {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Navigate to="/PaginaInicial" />} />
+                <Route path="/" element={<Navigate to="/pagina-inicial" />} />
                 <Route path="/form-consulta" element={<FormConsulta />} />
                 <Route path="/marcar-consulta" element={<MarcarConsulta />} />
                 <Route path="/pagina-inicial" element={<PaginaInicial />} />
